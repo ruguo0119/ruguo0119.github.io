@@ -84,7 +84,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/07/26/25726/">25726</a>
+      <a class="p-name article-title" href="/2025/07/26/25726/">带缝隙圆柱的电容</a>
     </h1>
   
 
@@ -92,14 +92,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="用保角变换求解带缝的圆柱电容"><a href="#用保角变换求解带缝的圆柱电容" class="headerlink" title="用保角变换求解带缝的圆柱电容"></a>用保角变换求解带缝的圆柱电容</h1><p>题目:已知一个无限长圆柱半径R，过直径将其切成两半，并且切口圆心张角为$\alpha \ll 1$ 问单位长度上下两半半圆柱形成的电容器的电容？<br><img src="https://pic1.zhimg.com/80/v2-f841e78f4f96389c3023c2c39e359b96_1440w.webp?source=d16d100b" alt="img"></p>
+<p>针对此问题，由于其平面性，可以考虑使用保角变换，根据此问题，考虑使用$\omega&#x3D;ln(\frac{z-R}{z+R})$这个变换，即$f(z)&#x3D;ln(\left| \frac{z-R}{z+R} \right|)+iarg(\frac{z-R}{z+R})$ ，那么上下的半圆边界变成了近似无限长的平面，上半圆变为了$y&#x3D;\pi&#x2F;2$ (绿线)，下半圆变成了$y&#x3D;-\pi&#x2F;2$(红线) 而实部(横坐标)取值范围是$（ln(\frac{\alpha}{2}),ln(\frac{2}{\alpha}))$(可以看到，在α很小的近似下，平面近似为无限大),需要注意，由于这个变换涉及多值函数，每2pi构成一个单值分支，因此，上半圆也可以变换到$5\pi&#x2F;2$ 等等具有周期性的解，于是构成了下图<br><img src="https://picx.zhimg.com/80/v2-2b8e1215fafc6b40fc21cb9083a81e51_1440w.jpg?source=d16d100b" alt="img"></p>
+<p>对于我们的考差，依据保角变换的特性，实际上就是求绿线和红线的电容，考虑到绿线自身也会和黄线构成电容器，但是我们只计算绿线与红线的电容，那么使用平行板电容的公式即可,所以实际的电容$C&#x3D;\frac{Q}{U}&#x3D;\frac{Q}{\frac{Q}{2\varepsilon\ln(\frac{4}{\alpha^{2}})}\pi}&#x3D;\frac{2\varepsilon ln(\frac{4}{\alpha^{2}})}{\pi}$</p>
+<p>实际上，使用拉普拉斯方程可以计算得到其解为$C&#x3D;\frac{2\varepsilon ln(cot(\frac{\alpha}{2})^2)}{\pi}$ 可以看出，在小角近似的条件下两者答案是一致的.</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/07/26/25726/" data-id="cmdk94g1r0000kkgn059k2ihs" data-title="25726" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/07/26/25726/" data-id="cmdk94g1r0000kkgn059k2ihs" data-title="带缝隙圆柱的电容" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B-%E4%BF%9D%E8%A7%92%E5%8F%98%E6%8D%A2/" rel="tag">物理竞赛 保角变换</a></li></ul>
+
     </footer>
   </div>
   
@@ -169,9 +175,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B-%E4%BF%9D%E8%A7%92%E5%8F%98%E6%8D%A2/" rel="tag">物理竞赛 保角变换</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B-%E4%BF%9D%E8%A7%92%E5%8F%98%E6%8D%A2/" style="font-size: 10px;">物理竞赛 保角变换</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -190,7 +210,7 @@
       <ul>
         
           <li>
-            <a href="/2025/07/26/25726/">25726</a>
+            <a href="/2025/07/26/25726/">带缝隙圆柱的电容</a>
           </li>
         
           <li>
