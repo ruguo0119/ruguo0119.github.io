@@ -47,7 +47,7 @@ NexT.boot.refresh = function() {
     background: 'var(--content-bg-color)'
   });
   CONFIG.lazyload && window.lozad('.post-body img').observe();
-  CONFIG.pangu && window.pangu.spacingElementByTagName('main');
+  CONFIG.pangu && window.pangu.spacingPage();
 
   CONFIG.exturl && NexT.utils.registerExtURL();
   NexT.utils.wrapTableWithBox();
