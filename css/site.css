@@ -1,0 +1,52 @@
+/* Shared navigation and small personal-page layout. No framework required. */
+.site-nav .site-links { list-style: none; display: flex; gap: 6px; margin: 0; padding: 0; }
+.site-nav .site-links li { margin: 0; }
+.site-nav .site-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; color: #444; border: 0; text-decoration: none; font-size: 15px; }
+.site-nav .site-links a:hover { color: #111; background: #f1f1f1; }
+.site-nav .site-links a[aria-current="page"] { color: #111; font-weight: 700; box-shadow: inset 0 -2px #222; }
+.site-nav .site-links a:focus-visible, .personal-site a:focus-visible { outline: 2px solid #346c9e; outline-offset: 3px; }
+.personal-site { margin: 0; color: #333; background: #f7f7f7; font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+.personal-site * { box-sizing: border-box; }
+.personal-site a { color: #315e7d; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.personal-header { max-width: 920px; margin: 0 auto; padding: 24px 40px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.personal-header .site-name { color: #222; font-size: 20px; font-weight: 700; text-decoration: none; }
+.personal-main { max-width: 840px; margin: 0 auto; padding: 40px 48px; background: #fff; border-top: 3px solid #222; }
+.personal-main h1 { font-size: 32px; line-height: 1.4; margin: 8px 0 18px; font-weight: 650; }
+.personal-main h1 span { font-size: 23px; color: #666; white-space: nowrap; }
+.personal-main h2 { font-size: 20px; margin: 0 0 14px; }
+.personal-main h3 { font-size: 17px; margin: 0 0 6px; }
+.personal-main p { margin: 8px 0 16px; }
+.personal-main section + section { margin-top: 32px; padding-top: 26px; border-top: 1px solid #e8e8e8; }
+.personal-main .eyebrow { font-size: 13px; color: #777; margin: 0; }
+.personal-main .affiliation { font-size: 17px; color: #555; }
+.personal-main .contact { font-size: 15px; }
+.personal-main .project + .project { margin-top: 22px; }
+.personal-main .year, .timeline-date { color: #777; font-variant-numeric: tabular-nums; }
+.honor-list { list-style: none; padding: 0; margin: 0; }
+.honor-list li { padding: 7px 0; }
+.honor-list .year { display: inline-block; margin-right: 12px; }
+.post-list { list-style: none; padding: 0; margin: 26px 0 0; }
+.post-list li { display: grid; grid-template-columns: 112px 1fr; align-items: baseline; gap: 18px; padding: 20px 0; border-bottom: 1px solid #e8e8e8; }
+.post-list time { font-size: 14px; color: #777; font-variant-numeric: tabular-nums; }
+.post-list a { display: flex; justify-content: space-between; gap: 18px; font-size: 18px; }
+.personal-footer { max-width: 840px; margin: 0 auto; padding: 28px 24px; text-align: center; color: #777; font-size: 13px; }
+.skip-link { position: absolute; top: -60px; left: 12px; background: white; padding: 8px 16px; z-index: 20; }
+.skip-link:focus { top: 8px; }
+/* NexT article/archive pages keep their layout and use the same three links. */
+.header .site-nav { display: block !important; height: auto !important; }
+.header .site-links { flex-direction: column; padding: 8px 0; }
+.header .site-links a { display: flex; }
+.header .site-nav-toggle, .header .site-nav-right { display: none; }
+@media (max-width: 767px) {
+  .personal-header { padding: 18px 20px; flex-wrap: wrap; gap: 8px; }
+  .personal-header .site-nav { width: 100%; }
+  .site-nav .site-links { gap: 4px; }
+  .site-nav .site-links a { padding: 0 16px; }
+  .personal-main { margin: 0 12px; padding: 28px 22px; }
+  .personal-main h1 { font-size: 27px; }
+  .personal-main h1 span { display: block; font-size: 20px; margin-top: 4px; }
+  .personal-main .affiliation { font-size: 16px; }
+  .post-list li { grid-template-columns: 1fr; gap: 4px; padding: 18px 0; }
+  .post-list a { font-size: 17px; min-height: 44px; align-items: center; }
+  .header .site-links { flex-direction: row; justify-content: center; padding: 8px 0; }
+}
